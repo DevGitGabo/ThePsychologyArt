@@ -4,56 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index "The PSYCHOLOGY ART"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <img src="/assets/logo.webp" alt="Logo empresarial">
-        <h1>THE PSYCHOLOGY ART</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#nosotros">NOSOTROS</a></li>
-                <li><a href="#eventos">EVENTOS</a></li>
-                <li><a href="#servicios">SERVICIOS</a></li>
-                <li><a href="#contactanos">CONTACTANOS</a></li>
-            </ul>
-        </nav>
+    <script src="script.js"></script>
+    <header id="inicio" class="header">
+
+        <div class="menu container">
+            <img src="assets/logo.webp" class="logoImg" alt="">
+            <a href "#inicio" class="logo">THE PSYCHOLOGY ART</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="assets/menu.webp" class="menu-icono" alt="">
+            </label>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#eventos">EVENTOS</a></li>
+                    <li><a href="#servicios">SERVICIOS</a></li>
+                    <li><a href="#contactanos">CONTACTANOS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
     </header>
     
-    <section id="inicio">
-        <div>
-            <h2> Tú eres aquello que haces, no aquello que dices que harás.</h2>
-            <h4>La salud mental es un preciado tesoro que merece tanto cuidado como nuestra salud física.</h6>
-            <button>Regístrate</button>
+    <section id="inicio" class="inicio-container">
+        <div class="text-container">
+            <h2>Tú eres aquello que haces, no aquello que dices que harás.</h2>
+            <h4>La salud mental es un preciado tesoro que merece tanto cuidado como nuestra salud física.</h4>
+            <a href="#modal" class="cta"><button>Registrate</button></a>
         </div>
-        <div>
-            <div>
+        <div class="image-container">
+            <div class="tall-image">
                 <img src="/assets/paint.webp" alt="Artista">
-
             </div>
-            <div>
-                <img src="/assets/making.webp" alt="Artista">
-                <img src="/assets/artist_making.webp" alt="Artista">
+            <div class="small-images">
+                <div class="image-box">
+                    <img src="/assets/making.webp" alt="Artista">
+                    <img src="/assets/artist_making.webp" alt="Artista">
+                </div>
             </div>
         </div>
     </section>
 
-    
-    <section id="nosotros">
-        <!-- Contenido de la sección "Acerca de" -->
+    <section id="nosotros" class="nosotros">
+        <h2>NUESTRA VISION Y MISION</h2>
+        <div class="line"></div>
+        <div class="nosotros-content">
+            <div>
+                <h3>MISION</h3>
+                <p>Brindar atención psicológica eficaz y oportuna por medio de del arteterapia y educativo,
+                     permitiendo la mejora de la Salud Mental de los adolescentes.</p>    
+            </div>
+            <div>
+                <h3>VISION</h3>
+                <p>Ser uno de los centros de intervención psicoterapéutica más reconocidos por emplear 
+                    las artes plásticas como medio de comunicación y expresión para recuperar o mejorar 
+                    la salud mental.</p>
+            </div>
+        </div>        
     </section>
     
-    <section id="eventos">
-        <!-- Contenido de la sección de servicios -->
+    <section id="eventos" class="eventos-container">
+        <h2>EVENTOS</h2>
+        <p>¡NOS PODEMOS ENCONTRAR!</p>
+
+        <div class="row">
+            <div class="evento-col">
+                <img src="assets/Mall-Aventura-Cix.webp" alt="">
+                <div class="layer">
+                    <h3>Mall Aventura</h3>
+                    <p>Chiclayo <br> 15 - 12 - 2023</p>
+                </div>
+            </div>
+            <div class="evento-col">
+                <img src="assets/real-plaza-chicalyo.webp" alt="">
+                <div class="layer">
+                    <h3>Real Plaza</h3>
+                    <p>Chiclayo <br> 16 - 12 - 2023</p>
+                </div>
+            </div>
+            <div class="evento-col">
+                <img src="assets/musas.webp" alt="">
+                <div class="layer">
+                    <h3>Parque de las Musas</h3>
+                    <p>Chiclayo <br> 17 - 12 - 2023</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
     </section>
     
-    <section id="servicios">
-        <!-- Contenido de la sección de contacto -->
+    <section id="servicios" class="services">
+
+        <div class="services-content container">
+            <h2>SERVICIOS</h2>
+        </div>
+
+        <div class="general">
+            <div class="general-1">
+                <h2>CONSULTAS PEDAGÓGICAS</h2>
+                <p>Abordar las dificultades académicas y 
+                        de aprendizaje en niños, adolescentes o 
+                        adultos jóvenes.</p>
+                <a href="#modal" class="cta"><button>Informacion</button></a>
+            </div>
+            <div class="general-2"></div>
+        </div>
+
+        <div class="general">
+            <div class="general-3"></div>
+            <div class="general-1">
+                <h3>TERAPIAS DE PAREJAS</h3>
+                <p>Enfoque terapéutico diseñado para ayudar a 
+                    las relaciones de pareja a superar conflictos, 
+                    mejorar la comunicación y fortalecer la conexión
+                    emocional.</p>
+                <a href="#modal" class="cta"><button>Informacion</button></a>
+            </div>
+        </div>
+
+        <div class="general">
+            <div class="general-1">
+                <h3>TERAPIAS  DE FAMILIA</h3>
+                <p>Abordar los problemas y desafíos que afectan a
+                    las dinámicas familiares y las relaciones entre sus 
+                    miembros.</p>
+                <a href="#modal" class="cta"><button>Informacion</button></a>
+            </div>
+            <div class="general-4"></div>
+        </div>
+
+        <div class="general">
+            <div class="general-5"></div>
+            <div class="general-1">
+                <h3>TALLERES DE REFLEXIÓN Y CREATIVIDAD</h3>
+                <p>Espacio en el que los participantes tienen la oportunidad
+                    de explorar sus pensamientos, emociones y experiencias
+                    desde una perspectiva creativa y terapéutica.</p>
+                <a href="#modal" class="cta"><button>Informacion</button></a>
+            </div>
+        </div>
+        
     </section>
 
-    <section id="contactanos">
-        <!-- Contenido de la sección de contacto -->
+    <section id="contactanos" class="contact-us">
+        <h2>CONTACTANOS</h2>
+
+        <div class="row">
+            <div class="contact-col" id="cc">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Av Inventada</h5>
+                        <p>Chiclayo, Perú</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+51 933 853 600</h5>
+                        <p>Lunes a Viernes, 10 AM a 6 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>ThePsychologyArt@thepsychology.com</h5>
+                        <p>Envíanos tu consulta por correo electrónico</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Ingresa tu nombre" required>
+                    <input type="text" placeholder="Ingresa tu correo electrónico" required>
+                    <input type="text" placeholder="Acerca de" required>  
+                    <textarea rows="8" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="hero-btn red-btn" >Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+
     </section>
+
+    <footer >
+        <div class="footer-content">
+            <h3>THE PSYCHOLOGY ART</h3>
+            <p>
+                "The Psychology Art" es un centro de psicoterapia fundado el 20/10/23 en Chiclayo. Su enfoque principal es abordar problemas de autoestima, ansiedad y estrés en adolescentes mediante el uso de técnicas artísticas.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 THE PSYCHOLOGY ART. designed by <span>devgabo</span></p>
+        </div>
+    </footer>
+
+    <section id="modal" class="modal">
+        <div class="modal_container">
+            <figure class="modal_picture">
+                <img src="" alt="">
+            </figure>
+
+            <h2 class="modal_title">
+                !Eres!
+                <span class="modal_title modal_title--bold">Genial</span>
+            </h2>
+
+            <p class="modal_paragraph">
+                Si deseas aprender más del programa animate a contactarnos por cualquiera de nuestros medios.
+            </p>
+
+            <a href="#contactanos" class="modal_close">!De acuerdo!</a>
+        </div>
+    </section>
+
+    <button id="scrollToTopBtn" title="Volver arriba">↑</button>
 
 </body>
 </html>
