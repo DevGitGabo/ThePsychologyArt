@@ -45,10 +45,20 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 5vh;
+    min-height: 12vh;
     display: flex;
     align-items: center;
 }
+
+.menu::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 97%; /* Ajusta el ancho de la línea según tus necesidades */
+    border-bottom: 2px solid #ccc; /* Ajusta el grosor y el color según tus preferencias */
+  }
 
 .menu {
     position: absolute;
@@ -60,10 +70,18 @@ body {
     justify-content: space-between;
 }
 
+.div_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .logo {
     color: #31241E;
     font-size: 25px;
     font-weight: 800;
+    margin: 20px; /* Puedes ajustar el valor según el espacio que desees */
 }
 
 .menu .navbar ul li{
@@ -89,7 +107,8 @@ body {
 }
 
 .logoImg{
-    width: 45px;
+    width: 60px;
+    margin-left: 30px;
 }
 
 .menu label {
@@ -183,7 +202,7 @@ body {
 }
 
 .services-content h2 {
-    font-size: 55px;
+    font-size: 60px;
     line-height: 70px;
     color: #31241E;
     text-transform: uppercase;
@@ -196,9 +215,12 @@ body {
 
 .general-1 {
     width: 50%;
-    padding: 100px 250px 100px 100px;
+    padding: 100px 250px 210px 100px;
     background-color: #f9fAfC;
-    
+}
+
+.general-1 p{
+    margin-top: 10px;
 }
 
 .general-2 {
@@ -210,7 +232,7 @@ body {
 }
 
 .general-3 {
-    background-image: url(assets/terapia_pareja.webp);
+    background-image: url(assets/terapia_interperson.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,8 +262,8 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
 .general button:hover {
@@ -263,7 +285,7 @@ body {
 }
 
 .eventos-container{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
@@ -272,7 +294,7 @@ body {
 .eventos-container h2 {
     text-align: center;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 60px;
     margin: 10px 0;
 }
 
@@ -301,6 +323,14 @@ body {
     margin-top: 3%;
     display: flex;
     justify-content: space-between;
+    margin: 80px;
+}
+
+.row-2 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 .layer {
@@ -355,7 +385,7 @@ body {
 
 .nosotros {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-image: url(/assets/fondo.webp);
     background-position: center;
     background-size: cover;
@@ -365,7 +395,6 @@ body {
     display: flex;
     position: relative;
 }
-
 
 .nosotros-content {
     width: 60%;
@@ -377,12 +406,16 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Ajusta los valores según tus preferencias */
 }
 
+.block-n{
+    margin: 20px;
+}
+
 .nosotros-content .line {
     margin-bottom: 50px;
 }
 
 .nosotros h2 {
-    font-size: 60px;
+    font-size: 62px;
     width: 60%;
     padding: 70px;
     color: rgb(255, 255, 255);
@@ -393,14 +426,14 @@ body {
 }
 
 .nosotros h3 {
-    font-size: 30px;
+    font-size: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajusta los valores según tus preferencias */
 
 }
 
 .nosotros-content p {
     color: inherit; /* Hereda el color del ancestro */
-    font-size: 16px;
+    font-size: 17px;
 }
 .contact-us{
     width: 80%;
@@ -468,6 +501,7 @@ body {
     margin-bottom: 5px;
     color: #31241E;
     font-weight: 400;
+    font-family: sans-serif;
 }
 
 .contact-col input, .contact-col textarea {
@@ -646,12 +680,20 @@ footer{
     .modal_title {
         font-size: 1.7rem;
     }
+
+    .inicio-container {
+        padding: 100px;
+        margin-top: 100px;
+    }
+
 }
 
 /* Medium screens (767px and below) */
 @media (max-width: 767px) {
+
     .inicio-container {
         padding: 100px;
+        margin-top: 100px;
     }
 
     .text-container {
@@ -730,6 +772,10 @@ footer{
         list-style: none;
     }
 
+    .inicio-container {
+        margin-top: 100px;
+    }
+
     .menu {
         padding: 30px;
     }
@@ -743,7 +789,6 @@ footer{
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #F6F4F3;
         display: none;
     }
 
@@ -807,152 +852,5 @@ footer{
 
     .text-container h4 {
         font-size: 10px;
-    }
-}
-
-/* Extra small screens (480px and below) */
-@media (max-width: 480px) {
-    .footer-content h3 {
-        font-size: 1.2rem;
-    }
-
-    .footer-content p,
-    .footer-bottom p {
-        font-size: 10px;
-    }
-}
-
-/* Mobile screens (767px and below) */
-@media only screen and (max-width: 767px) {
-    .menu {
-        padding: 30px;
-    }
-
-    .menu label {
-        display: initial;
-    }
-
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #F6F4F3;
-        display: none;
-    }
-
-    .menu .navbar ul li {
-        width: 100%;
-    }
-
-    #menu:checked~.navbar {
-        display: initial;
-    }
-
-    .header {
-        min-height: 0vh;
-    }
-
-    .header-content {
-        padding: 100px 30px;
-    }
-
-    .inicio-container .image-container {
-        display: none;
-    }
-
-    .header-content p {
-        padding: 0;
-    }
-
-    .services {
-        padding: 30px;
-        text-align: center;
-    }
-
-    .general {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .general-1 {
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .general-2,
-    .general-3,
-    .general-4,
-    .general-5 {
-        display: none;
-    }
-
-    .layer h3 {
-        font-size: 26px;
-    }
-
-    .layer p {
-        font-size: 15px;
-    }
-
-    .text-container h2 {
-        font-size: 25px;
-    }
-
-    .text-container h4 {
-        font-size: 10px;
-    }
-
-    /* Modificaciones para "Nosotros" */
-    .nosotros-content {
-        width: 100%;
-    }
-
-    .nosotros-content div {
-        width: 100%;
-    }
-
-    .nosotros h2 {
-        font-size: 40px;
-        padding: 20px;
-    }
-
-    .nosotros h3 {
-        font-size: 20px;
-    }
-
-    .nosotros-content p {
-        font-size: 14px;
-    }
-
-    /* Modificaciones para "Footer" */
-    .footer-content h3 {
-        font-size: 1.5rem;
-    }
-
-    .footer-content p,
-    .footer-bottom p {
-        font-size: 12px;
-    }
-}
-
-/* Special styling for screens with a maximum width of 767px */
-@media only screen and (max-width: 767px) {
-    .contact-us {
-        width: 100%;
-    }
-
-    .contact-us h2 {
-        width: 100%;
-        font-size: 20px;
-    }
-
-    .contact-col {
-        flex-basis: 100%;
-    }
-
-    #cc {
-        display: none;
     }
 }
