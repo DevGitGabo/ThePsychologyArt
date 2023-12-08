@@ -107,8 +107,8 @@ body {
 }
 
 .logoImg{
-    width: 60px;
-    margin-left: 30px;
+    width: 80px;
+    margin-left: 15px;
 }
 
 .menu label {
@@ -121,6 +121,8 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 75px;
     background-color: #F6F4F3;
 }
 
@@ -175,6 +177,7 @@ body {
 .image-box {
     display: flex;
     margin-bottom: 10px;
+    gap: 10px;
 }
 
 .small-images img {
@@ -224,7 +227,7 @@ body {
 }
 
 .general-2 {
-    background-image: url(assets/consultas.webp);
+    background-image: url(assets/spintura.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,7 +235,7 @@ body {
 }
 
 .general-3 {
-    background-image: url(assets/terapia_interperson.webp);
+    background-image: url(assets/smodelado.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -284,11 +287,11 @@ body {
     margin: 25px 0 45px 0;
 }
 
-.eventos-container{
+.eventos-container {
     width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .eventos-container h2 {
@@ -307,14 +310,32 @@ body {
 .evento-col {
     flex-basis: 32%;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
-    overflow: hidden;
+}
+
+.evento-colU {
+    flex-basis: 32%;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.evento-colU p {
+    margin: 0;
+}
+
+.evento-colU img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .evento-col img {
     width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
     object-position: center;
 }
@@ -323,7 +344,16 @@ body {
     margin-top: 3%;
     display: flex;
     justify-content: space-between;
-    margin: 80px;
+    margin: 5%;
+}
+
+.row-l {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .row-2 {
@@ -334,54 +364,30 @@ body {
 }
 
 .layer {
-    background: transparent;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    transition: 0.5s;
-    overflow: hidden; /* Esto oculta cualquier contenido que se desborde del contenedor */
+    display: flex;
+    flex-direction: column;
 }
 
-.layer h3{
-    color: #F6F4F3;
-    width: 100%;
+.layer h3 {
+    color: #000; /* Cambiado a negro */
     font-weight: 500;
     font-size: 35px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-.layer:hover h3{
-    bottom: 50%;
-    opacity: 1;
+    margin-bottom: 10px; /* Añadido para separar el título del párrafo */
+    margin-top: 10px; /* Añadido para separar el título del párrafo */
 }
 
 .layer p {
-    color: #F6F4F3;
-    width: 50%;
+    color: #000; /* Cambiado a negro */
     font-weight: 500;
     font-size: 20px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
+    margin-bottom: 0; /* Añadido para eliminar el margen inferior predeterminado */
 }
 
-.layer:hover p{
-    bottom: 20%;
-    opacity: 1;
-}
-
-.layer:hover {
-    background: rgba(83, 81, 79, 0.7); /* 0.7 es el valor de opacidad, puedes ajustarlo según tus preferencias */
-}
 
 .nosotros {
     width: 100%;
@@ -394,16 +400,17 @@ body {
     justify-content: center; /* Centra horizontalmente el contenido */
     display: flex;
     position: relative;
+
+    
 }
 
 .nosotros-content {
     width: 60%;
     padding: 50px;
-    color: #F6F4F3;
+    color: #000000;
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Ajusta los valores según tus preferencias */
 }
 
 .block-n{
@@ -418,22 +425,19 @@ body {
     font-size: 62px;
     width: 60%;
     padding: 70px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajusta los valores según tus preferencias */
 }
 
 .nosotros h3 {
-    font-size: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajusta los valores según tus preferencias */
-
+    font-size: 50px;
 }
 
 .nosotros-content p {
     color: inherit; /* Hereda el color del ancestro */
-    font-size: 17px;
+    font-size: 21px;
 }
 .contact-us{
     width: 80%;
